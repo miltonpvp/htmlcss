@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+   background: #081b29;
+}
+
+div.ola{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo > a{
+    font-size: 30px;
+    font-family: "Poetsen one",sans-serif;
+}
+
+
+.logo{
+    margin-right: 180px;
+    font-weight: 400;
+    border-bottom: 2px solid white;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+.imagem{
+    width: 400px;
+}
+
+div > a{
+    color: #ffff;
+    border-bottom:2px solid  transparent;
+    transition: all .55s ease;
+    font-size: 18px;
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+}
+
+.text{
+    padding: 150px 0px 0px 59px;
+    width: 400px;
+}
+
+h1{
+    font-family: "Poetsen one",sans-serif;
+    font-size: 50px;
+    color: #ffff;
+}
+
+h2{
+    font-family: "Poetsen one",sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #05ABEB;
+}
+
+p{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+.con{
+    padding: 10px;
+    font-size: 15px;
+    background: transparent;
+    border:2px solid #05ABEB;border-radius: 10px;
+    cursor: pointer;
+    color: #05ABEB;
+    font-weight: 800;
+}
+
+.vam{
+    padding: 10px;
+    margin-left: 25px;
+    font-size: 15px;
+    background: transparent;
+    border:2px solid #05ABEB;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #05ABEB;
+    font-weight: 800;
+}
+
+.con:hover{
+    background: #05ABEB;
+    color: black;
+    transition: 2s;
+}
+
+.vam:hover{
+    background: #05ABEB;
+    color: black;
+    transition: 2s;
+}
