@@ -12,26 +12,27 @@ body{
    background: #081b29;
 }
 
-div.ola{
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+.menu-lateral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:  60px;
+    margin-right: 60px;
 }
 
-.nav-bar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.menu{
+    color: white;
+    display: none;
 }
 
 .logo > a{
     font-size: 30px;
     font-family: "Poetsen one",sans-serif;
+    color: white;
 }
 
 
 .logo{
-    margin-right: 180px;
     font-weight: 400;
     border-bottom: 2px solid white;
 }
@@ -52,14 +53,14 @@ main{
     width: 400px;
 }
 
-div > a{
+div li a{
     color: #ffff;
     border-bottom:2px solid  transparent;
     transition: all .55s ease;
     font-size: 18px;
 }
 
-a:hover{
+.link  li > a:hover{
     border-bottom: 2px solid white;
 }
 
@@ -120,4 +121,34 @@ p{
     background: #05ABEB;
     color: black;
     transition: 2s;
+}
+
+.icon{
+    margin-left: 60px;
+    margin-top: 100px;
+}
+
+.icon a > span{
+    margin: 5px;
+    color:#05ABEB;
+}
+
+@media screen and (max-width: 700px) {
+    .menu{
+        display: block;
+        margin-right: -30px;
+        margin-top: auto;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .link{
+        display: none;
+        margin: 50px 0px 0px 200px ;
+    }
+    .menu-lateral{
+        flex-direction: row-reverse;
+    }
+    .text{
+        padding: 150px 0px 0px 0px;
+        width: 100%;
 }

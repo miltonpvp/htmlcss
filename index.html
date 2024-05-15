@@ -5,34 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-     <div class="ola">
-        <nav class="nav-bar">
-            <div class="logo">
-                <a href="#">
-                    <li>Milton.</li>
-                 </a>
+     <div class="container">
+
+        <nav class="menu-lateral">
+
+            <div class="menu" onclick="clickMenu()">
+                <i class="bi bi-list"></i>
+            </div>
             </div>
 
-            <div class="link">
-                 <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Services</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
-                <a href="#">
-                    <li>Portfolio</li>
-                </a>
+                   <div class="link" id="itens">
+                      <li>
+                        <a href="#">
+                            <span>home</span>
+                        </a>
+                      </li>
+                     <li><a href="#">
+                        <span>about</span>
+                          </a>
+                     </li>
+                     <li><a href="#">
+                        <span>services</span>
+                         </a>
+                     </li>
+                    <li>
+                        <a href="#">
+                        <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
                 </div>
-        </nav>
+        </nav> 
 
         <div class="text">
              <h1>
@@ -45,6 +55,25 @@
                 <button class="vam">Vamos conversar</button>
                 </div>
             </div>
+            <div class="icon">
+                <a href="#">
+                    <span><i class="bi bi-facebook"></i></span>
+                </a>
+                <a href="#">
+                    <span><i class="bi bi-twitter-x"></i></span>
+                </a>
+                <a href="#"><span><i class="bi bi-instagram"></i></span>
+                </a>
+            </div>
     </div>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+             itens.style.display = 'none'
+           } else {
+            itens.style.display =  'block'
+           }
+        }
+    </script>
 </body>
 </html>
