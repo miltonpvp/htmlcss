@@ -25,7 +25,7 @@ body{
     display: none;
 }
 
-.logo > a{
+.logo {
     font-size: 30px;
     font-family: "Poetsen one",sans-serif;
     color: white;
@@ -34,7 +34,7 @@ body{
 
 .logo{
     font-weight: 400;
-    border-bottom: 2px solid white;
+    border-bottom:2px solid white ;
 }
 
 .link{
@@ -131,24 +131,4 @@ p{
 .icon a > span{
     margin: 5px;
     color:#05ABEB;
-}
-
-@media screen and (max-width: 700px) {
-    .menu{
-        display: block;
-        margin-right: -30px;
-        margin-top: auto;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .link{
-        display: none;
-        margin: 50px 0px 0px 200px ;
-    }
-    .menu-lateral{
-        flex-direction: row-reverse;
-    }
-    .text{
-        padding: 150px 0px 0px 0px;
-        width: 100%;
 }

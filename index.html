@@ -9,15 +9,17 @@
 </head>
 <body>
      <div class="container">
-
+        <div class="menu" onclick="clickMenu()">
+            <i class="bi bi-list"></i>
+        </div>
         <nav class="menu-lateral">
-
-            <div class="menu" onclick="clickMenu()">
-                <i class="bi bi-list"></i>
+            <div class="logo">
+                <li>
+                    Milton
+                </li>
             </div>
-            </div>
-
-                   <div class="link" id="itens">
+           
+            <div class="link" id="itens">
                       <li>
                         <a href="#">
                             <span>home</span>
@@ -66,14 +68,5 @@
                 </a>
             </div>
     </div>
-    <script>
-        function clickMenu() {
-           if (itens.style.display == 'block') {
-             itens.style.display = 'none'
-           } else {
-            itens.style.display =  'block'
-           }
-        }
-    </script>
 </body>
 </html>
